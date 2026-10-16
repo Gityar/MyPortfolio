@@ -1,0 +1,2366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Yaregal Semanew - Neonatal Nursing Lecturer at Wollo University. Researcher, educator, and Digital Technology innovator.">
+    <meta name="keywords" content="Yaregal Semanew, Neonatal Nursing, Wollo University, NICU, Nursing Education, LMS, Ethiopia">
+    <meta name="author" content="Yaregal Semanew">
+    
+    <!-- Open Graph / Social Media -->
+    <meta property="og:title" content="Yaregal Semanew - Neonatal Nursing Educator">
+    <meta property="og:description" content="Lecturer in Neonatal Nursing at Wollo University. Researcher & Digital Technology Innovator.">
+    <meta property="og:type" content="website">
+    
+    <title>Yaregal Semanew | Neonatal Nursing Educator & Researcher</title>
+    
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👶</text></svg>">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        /* ==================== CSS VARIABLES ==================== */
+        :root {
+            --primary: #0ea5e9;
+            --primary-dark: #0284c7;
+            --primary-light: #e0f2fe;
+            --secondary: #14b8a6;
+            --accent: #f97316;
+            --dark: #0f172a;
+            --dark-light: #1e293b;
+            --gray: #64748b;
+            --gray-light: #94a3b8;
+            --light: #f8fafc;
+            --white: #ffffff;
+            --gradient-1: linear-gradient(135deg, #0ea5e9 0%, #14b8a6 100%);
+            --gradient-2: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            --gradient-3: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            --gradient-4: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+            --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+            --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            --shadow-md: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            --shadow-lg: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+            --shadow-xl: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+            --radius-sm: 8px;
+            --radius: 12px;
+            --radius-lg: 20px;
+            --radius-xl: 30px;
+            --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        /* ==================== RESET & BASE ==================== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 80px;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            color: var(--dark);
+            background: var(--white);
+            line-height: 1.6;
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 700;
+            line-height: 1.2;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: var(--transition);
+        }
+
+        img {
+            max-width: 100%;
+            display: block;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        /* ==================== UTILITY CLASSES ==================== */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        .section {
+            padding: 100px 0;
+            position: relative;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .section-label {
+            display: inline-block;
+            padding: 6px 16px;
+            background: var(--primary-light);
+            color: var(--primary-dark);
+            border-radius: 50px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            margin-bottom: 16px;
+        }
+
+        .section-title {
+            font-size: clamp(2rem, 4vw, 2.75rem);
+            color: var(--dark);
+            margin-bottom: 16px;
+        }
+
+        .section-subtitle {
+            font-size: 1.1rem;
+            color: var(--gray);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* ==================== NAVIGATION ==================== */
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            padding: 16px 0;
+            transition: var(--transition);
+            background: transparent;
+        }
+
+        .navbar.scrolled {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            box-shadow: var(--shadow);
+            padding: 12px 0;
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 800;
+            font-size: 1.25rem;
+            color: var(--dark);
+        }
+
+        .nav-logo .logo-icon {
+            width: 40px;
+            height: 40px;
+            background: var(--gradient-1);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            font-size: 1.2rem;
+            font-weight: 900;
+        }
+
+        .nav-logo span {
+            background: var(--gradient-1);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .nav-links a {
+            padding: 8px 16px;
+            font-size: 0.95rem;
+            font-weight: 500;
+            color: var(--dark-light);
+            border-radius: var(--radius-sm);
+            position: relative;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary);
+            background: var(--primary-light);
+        }
+
+        .nav-links a.active {
+            color: var(--primary);
+            font-weight: 600;
+        }
+
+        .nav-cta {
+            padding: 10px 22px !important;
+            background: var(--gradient-1) !important;
+            color: var(--white) !important;
+            border-radius: 50px !important;
+            font-weight: 600 !important;
+            box-shadow: var(--shadow) !important;
+        }
+
+        .nav-cta:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-md) !important;
+            background: var(--gradient-1) !important;
+            color: var(--white) !important;
+        }
+
+        .mobile-toggle {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            color: var(--dark);
+            cursor: pointer;
+            padding: 8px;
+        }
+
+        /* ==================== HERO SECTION ==================== */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+            background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 50%, #ccfbf1 100%);
+            padding: 120px 0 80px;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -20%;
+            width: 800px;
+            height: 800px;
+            background: radial-gradient(circle, rgba(14, 165, 233, 0.15) 0%, transparent 70%);
+            border-radius: 50%;
+            animation: float 8s ease-in-out infinite;
+        }
+
+        .hero::after {
+            content: '';
+            position: absolute;
+            bottom: -30%;
+            left: -10%;
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, rgba(20, 184, 166, 0.15) 0%, transparent 70%);
+            border-radius: 50%;
+            animation: float 10s ease-in-out infinite reverse;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translate(0, 0) scale(1); }
+            50% { transform: translate(30px, -30px) scale(1.05); }
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            display: grid;
+            grid-template-columns: 1.2fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .hero-text .greeting {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 18px;
+            background: var(--white);
+            border-radius: 50px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: var(--primary-dark);
+            box-shadow: var(--shadow-sm);
+            margin-bottom: 24px;
+        }
+
+        .hero-text .greeting .dot {
+            width: 8px;
+            height: 8px;
+            background: #22c55e;
+            border-radius: 50%;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 1; transform: scale(1); }
+            50% { opacity: 0.5; transform: scale(1.2); }
+        }
+
+        .hero-text h1 {
+            font-size: clamp(2.5rem, 5vw, 3.75rem);
+            line-height: 1.1;
+            margin-bottom: 24px;
+            color: var(--dark);
+        }
+
+        .hero-text h1 .highlight {
+            background: var(--gradient-1);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero-text .tagline {
+            font-size: 1.15rem;
+            color: var(--gray);
+            margin-bottom: 32px;
+            max-width: 550px;
+            line-height: 1.7;
+        }
+
+        .hero-stats {
+            display: flex;
+            gap: 32px;
+            margin-bottom: 36px;
+            flex-wrap: wrap;
+        }
+
+        .stat-item {
+            text-align: left;
+        }
+
+        .stat-number {
+            font-family: 'Poppins', sans-serif;
+            font-size: 2rem;
+            font-weight: 800;
+            background: var(--gradient-1);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            line-height: 1;
+        }
+
+        .stat-label {
+            font-size: 0.85rem;
+            color: var(--gray);
+            font-weight: 500;
+            margin-top: 4px;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 16px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 14px 28px;
+            border-radius: 50px;
+            font-weight: 600;
+            font-size: 1rem;
+            cursor: pointer;
+            border: none;
+            transition: var(--transition);
+            font-family: 'Inter', sans-serif;
+        }
+
+        .btn-primary {
+            background: var(--gradient-1);
+            color: var(--white);
+            box-shadow: var(--shadow-md);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .btn-secondary {
+            background: var(--white);
+            color: var(--dark);
+            border: 2px solid #e2e8f0;
+        }
+
+        .btn-secondary:hover {
+            border-color: var(--primary);
+            color: var(--primary);
+            transform: translateY(-3px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .hero-image {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .hero-avatar-wrapper {
+            position: relative;
+            width: 380px;
+            height: 380px;
+        }
+
+        .hero-avatar {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            background: var(--gradient-1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Poppins', sans-serif;
+            font-size: 8rem;
+            font-weight: 800;
+            color: var(--white);
+            box-shadow: var(--shadow-xl);
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero-avatar::before {
+            content: '';
+            position: absolute;
+            inset: -15px;
+            border-radius: 50%;
+            background: var(--gradient-1);
+            opacity: 0.2;
+            animation: pulse 3s ease-in-out infinite;
+        }
+
+        .floating-badge {
+            position: absolute;
+            background: var(--white);
+            padding: 12px 20px;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow-lg);
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            z-index: 3;
+            animation: float 5s ease-in-out infinite;
+        }
+
+        .floating-badge.badge-1 {
+            top: 10%;
+            right: -10%;
+            animation-delay: 0s;
+        }
+
+        .floating-badge.badge-2 {
+            bottom: 15%;
+            left: -15%;
+            animation-delay: 1s;
+        }
+
+        .floating-badge.badge-3 {
+            bottom: 5%;
+            right: 0%;
+            animation-delay: 2s;
+        }
+
+        .badge-icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            font-size: 1.1rem;
+            flex-shrink: 0;
+        }
+
+        .badge-icon.blue { background: var(--gradient-1); }
+        .badge-icon.purple { background: var(--gradient-2); }
+        .badge-icon.orange { background: var(--gradient-3); }
+
+        .badge-text {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .badge-text strong {
+            font-size: 0.9rem;
+            color: var(--dark);
+            line-height: 1.2;
+        }
+
+        .badge-text span {
+            font-size: 0.75rem;
+            color: var(--gray);
+        }
+
+        /* ==================== ABOUT SECTION ==================== */
+        .about {
+            background: var(--white);
+        }
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1.3fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .about-image {
+            position: relative;
+        }
+
+        .about-image-card {
+            background: var(--gradient-1);
+            border-radius: var(--radius-lg);
+            padding: 40px;
+            color: var(--white);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .about-image-card::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 60%);
+            animation: rotate 20s linear infinite;
+        }
+
+        @keyframes rotate {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        .about-image-card .icon-large {
+            font-size: 4rem;
+            margin-bottom: 20px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .about-image-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 12px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .about-image-card p {
+            opacity: 0.95;
+            line-height: 1.7;
+            position: relative;
+            z-index: 2;
+        }
+
+        .about-content h2 {
+            font-size: 2.25rem;
+            margin-bottom: 20px;
+            color: var(--dark);
+        }
+
+        .about-content .lead {
+            font-size: 1.15rem;
+            color: var(--gray);
+            margin-bottom: 24px;
+            line-height: 1.8;
+        }
+
+        .about-content p {
+            color: var(--gray);
+            margin-bottom: 20px;
+            line-height: 1.8;
+        }
+
+        .about-highlights {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 16px;
+            margin-top: 32px;
+        }
+
+        .highlight-item {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 14px 18px;
+            background: var(--light);
+            border-radius: var(--radius);
+            transition: var(--transition);
+        }
+
+        .highlight-item:hover {
+            background: var(--primary-light);
+            transform: translateX(5px);
+        }
+
+        .highlight-item i {
+            color: var(--primary);
+            font-size: 1.2rem;
+        }
+
+        .highlight-item span {
+            font-weight: 500;
+            font-size: 0.95rem;
+            color: var(--dark-light);
+        }
+
+        /* ==================== EXPERIENCE SECTION ==================== */
+        .experience {
+            background: var(--light);
+        }
+
+        .timeline {
+            position: relative;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 30px;
+            top: 0;
+            bottom: 0;
+            width: 3px;
+            background: linear-gradient(to bottom, var(--primary), var(--secondary));
+            border-radius: 3px;
+        }
+
+        .timeline-item {
+            position: relative;
+            padding-left: 80px;
+            margin-bottom: 40px;
+        }
+
+        .timeline-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .timeline-dot {
+            position: absolute;
+            left: 18px;
+            top: 8px;
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            background: var(--white);
+            border: 4px solid var(--primary);
+            box-shadow: var(--shadow);
+            z-index: 2;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .timeline-dot i {
+            font-size: 0.7rem;
+            color: var(--primary);
+        }
+
+        .timeline-card {
+            background: var(--white);
+            border-radius: var(--radius-lg);
+            padding: 28px;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            border-left: 4px solid transparent;
+        }
+
+        .timeline-card:hover {
+            box-shadow: var(--shadow-lg);
+            transform: translateX(5px);
+            border-left-color: var(--primary);
+        }
+
+        .timeline-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 12px;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .timeline-header h3 {
+            font-size: 1.25rem;
+            color: var(--dark);
+        }
+
+        .timeline-header .company {
+            color: var(--primary);
+            font-weight: 600;
+            font-size: 1rem;
+            margin-top: 4px;
+        }
+
+        .timeline-date {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 6px 14px;
+            background: var(--primary-light);
+            color: var(--primary-dark);
+            border-radius: 50px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            white-space: nowrap;
+        }
+
+        .timeline-card p {
+            color: var(--gray);
+            line-height: 1.7;
+            font-size: 0.95rem;
+        }
+
+        .timeline-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 16px;
+        }
+
+        .tag {
+            padding: 4px 12px;
+            background: var(--light);
+            color: var(--gray);
+            border-radius: 50px;
+            font-size: 0.8rem;
+            font-weight: 500;
+        }
+
+        /* ==================== SKILLS SECTION ==================== */
+        .skills {
+            background: var(--white);
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 24px;
+        }
+
+        .skill-card {
+            background: var(--light);
+            border-radius: var(--radius-lg);
+            padding: 32px;
+            transition: var(--transition);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .skill-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: var(--gradient-1);
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform 0.4s ease;
+        }
+
+        .skill-card:hover::before {
+            transform: scaleX(1);
+        }
+
+        .skill-card:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-lg);
+            background: var(--white);
+        }
+
+        .skill-icon {
+            width: 60px;
+            height: 60px;
+            border-radius: var(--radius);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            color: var(--white);
+            margin-bottom: 20px;
+            background: var(--gradient-1);
+        }
+
+        .skill-card:nth-child(2) .skill-icon { background: var(--gradient-2); }
+        .skill-card:nth-child(3) .skill-icon { background: var(--gradient-3); }
+        .skill-card:nth-child(4) .skill-icon { background: var(--gradient-4); }
+
+        .skill-card h3 {
+            font-size: 1.15rem;
+            margin-bottom: 16px;
+            color: var(--dark);
+        }
+
+        .skill-list {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .skill-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 0.9rem;
+            color: var(--gray);
+        }
+
+        .skill-item i {
+            color: var(--secondary);
+            font-size: 0.85rem;
+        }
+
+        /* ==================== RESEARCH SECTION ==================== */
+        .research {
+            background: var(--light);
+        }
+
+        .research-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 28px;
+        }
+
+        .research-card {
+            background: var(--white);
+            border-radius: var(--radius-lg);
+            padding: 32px;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .research-card:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-xl);
+        }
+
+        .research-card .journal {
+            display: inline-block;
+            padding: 4px 12px;
+            background: var(--primary-light);
+            color: var(--primary-dark);
+            border-radius: 50px;
+            font-size: 0.75rem;
+            font-weight: 700;
+            letter-spacing: 0.03em;
+            text-transform: uppercase;
+            margin-bottom: 16px;
+            align-self: flex-start;
+        }
+
+        .research-card h3 {
+            font-size: 1.15rem;
+            margin-bottom: 12px;
+            color: var(--dark);
+            line-height: 1.4;
+        }
+
+        .research-card .authors {
+            font-size: 0.85rem;
+            color: var(--gray);
+            margin-bottom: 16px;
+            font-style: italic;
+        }
+
+        .research-card p {
+            color: var(--gray);
+            font-size: 0.95rem;
+            line-height: 1.7;
+            margin-bottom: 20px;
+            flex-grow: 1;
+        }
+
+        .research-card .read-more {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--primary);
+            font-weight: 600;
+            font-size: 0.9rem;
+            margin-top: auto;
+        }
+
+        .research-card .read-more:hover {
+            gap: 12px;
+        }
+
+        /* ==================== PROJECTS SECTION ==================== */
+        .projects {
+            background: var(--white);
+        }
+
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 32px;
+        }
+
+        .project-card {
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            background: var(--white);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .project-card:hover {
+            transform: translateY(-8px);
+            box-shadow: var(--shadow-xl);
+        }
+
+        .project-banner {
+            height: 180px;
+            background: var(--gradient-1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            font-size: 3.5rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .project-card:nth-child(2) .project-banner { background: var(--gradient-2); }
+        .project-card:nth-child(3) .project-banner { background: var(--gradient-3); }
+
+        .project-banner::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: radial-gradient(circle at 30% 50%, rgba(255,255,255,0.2) 0%, transparent 60%);
+        }
+
+        .project-content {
+            padding: 28px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .project-status {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 4px 12px;
+            border-radius: 50px;
+            font-size: 0.75rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            margin-bottom: 14px;
+            align-self: flex-start;
+        }
+
+        .project-status.active {
+            background: #dcfce7;
+            color: #166534;
+        }
+
+        .project-status.dev {
+            background: #fef3c7;
+            color: #92400e;
+        }
+
+        .project-content h3 {
+            font-size: 1.25rem;
+            margin-bottom: 12px;
+            color: var(--dark);
+        }
+
+        .project-content p {
+            color: var(--gray);
+            font-size: 0.95rem;
+            line-height: 1.7;
+            margin-bottom: 20px;
+            flex-grow: 1;
+        }
+
+        .project-tech {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-bottom: 20px;
+        }
+
+        .tech-tag {
+            padding: 4px 12px;
+            background: var(--light);
+            color: var(--gray);
+            border-radius: var(--radius-sm);
+            font-size: 0.8rem;
+            font-weight: 500;
+        }
+
+        .project-links {
+            display: flex;
+            gap: 12px;
+            margin-top: auto;
+        }
+
+        .project-links a {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 8px 16px;
+            border-radius: var(--radius-sm);
+            font-size: 0.85rem;
+            font-weight: 600;
+            background: var(--light);
+            color: var(--dark);
+        }
+
+        .project-links a:hover {
+            background: var(--primary);
+            color: var(--white);
+        }
+
+        /* ==================== CONTACT SECTION ==================== */
+        .contact {
+            background: var(--dark);
+            color: var(--white);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .contact::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -20%;
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, rgba(14, 165, 233, 0.2) 0%, transparent 70%);
+            border-radius: 50%;
+        }
+
+        .contact .section-title {
+            color: var(--white);
+        }
+
+        .contact .section-subtitle {
+            color: var(--gray-light);
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1.2fr;
+            gap: 60px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .contact-info h3 {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+        }
+
+        .contact-info > p {
+            color: var(--gray-light);
+            line-height: 1.8;
+            margin-bottom: 32px;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            margin-bottom: 20px;
+            padding: 16px;
+            background: rgba(255,255,255,0.05);
+            border-radius: var(--radius);
+            transition: var(--transition);
+            border: 1px solid rgba(255,255,255,0.08);
+        }
+
+        .contact-item:hover {
+            background: rgba(255,255,255,0.1);
+            transform: translateX(5px);
+        }
+
+        .contact-item .contact-icon {
+            width: 48px;
+            height: 48px;
+            border-radius: var(--radius);
+            background: var(--gradient-1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.1rem;
+            color: var(--white);
+            flex-shrink: 0;
+        }
+
+        .contact-item .contact-detail {
+            flex-grow: 1;
+        }
+
+        .contact-item .contact-detail span {
+            display: block;
+            font-size: 0.8rem;
+            color: var(--gray-light);
+            margin-bottom: 2px;
+        }
+
+        .contact-item .contact-detail a {
+            color: var(--white);
+            font-weight: 500;
+            font-size: 0.95rem;
+        }
+
+        .contact-item .contact-detail a:hover {
+            color: var(--primary);
+        }
+
+        .social-links {
+            display: flex;
+            gap: 12px;
+            margin-top: 32px;
+        }
+
+        .social-link {
+            width: 48px;
+            height: 48px;
+            border-radius: var(--radius);
+            background: rgba(255,255,255,0.05);
+            border: 1px solid rgba(255,255,255,0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            font-size: 1.1rem;
+            transition: var(--transition);
+        }
+
+        .social-link:hover {
+            background: var(--gradient-1);
+            transform: translateY(-5px);
+            border-color: transparent;
+        }
+
+        .contact-form {
+            background: rgba(255,255,255,0.05);
+            border: 1px solid rgba(255,255,255,0.1);
+            border-radius: var(--radius-lg);
+            padding: 36px;
+            backdrop-filter: blur(10px);
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            font-size: 0.9rem;
+            font-weight: 500;
+            margin-bottom: 8px;
+            color: var(--gray-light);
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 14px 18px;
+            background: rgba(255,255,255,0.05);
+            border: 1px solid rgba(255,255,255,0.15);
+            border-radius: var(--radius);
+            color: var(--white);
+            font-family: 'Inter', sans-serif;
+            font-size: 0.95rem;
+            transition: var(--transition);
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--primary);
+            background: rgba(255,255,255,0.08);
+            box-shadow: 0 0 0 3px rgba(14, 165, 233, 0.2);
+        }
+
+        .form-group input::placeholder,
+        .form-group textarea::placeholder {
+            color: var(--gray);
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 16px;
+        }
+
+        .contact-form .btn-primary {
+            width: 100%;
+            justify-content: center;
+            padding: 16px;
+            font-size: 1rem;
+        }
+
+        .form-message {
+            display: none;
+            padding: 14px 18px;
+            border-radius: var(--radius);
+            margin-top: 16px;
+            font-size: 0.9rem;
+            text-align: center;
+        }
+
+        .form-message.success {
+            display: block;
+            background: rgba(34, 197, 94, 0.15);
+            border: 1px solid rgba(34, 197, 94, 0.3);
+            color: #86efac;
+        }
+
+        /* ==================== FOOTER ==================== */
+        .footer {
+            background: #0a0f1c;
+            padding: 40px 0 30px;
+            color: var(--gray-light);
+            text-align: center;
+        }
+
+        .footer-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .footer-logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 800;
+            font-size: 1.25rem;
+            color: var(--white);
+        }
+
+        .footer-logo .logo-icon {
+            width: 36px;
+            height: 36px;
+            background: var(--gradient-1);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            font-size: 1rem;
+            font-weight: 900;
+        }
+
+        .footer p {
+            font-size: 0.9rem;
+        }
+
+        .footer .heart {
+            color: #ef4444;
+            animation: pulse 1.5s infinite;
+        }
+
+        /* ==================== SCROLL ANIMATIONS ==================== */
+        .reveal {
+            opacity: 0;
+            transform: translateY(40px);
+            transition: opacity 0.8s ease, transform 0.8s ease;
+        }
+
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* ==================== BACK TO TOP ==================== */
+        .back-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: var(--gradient-1);
+            color: var(--white);
+            border: none;
+            cursor: pointer;
+            font-size: 1.1rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: var(--shadow-lg);
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(20px);
+            transition: var(--transition);
+            z-index: 999;
+        }
+
+        .back-to-top.visible {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+
+        .back-to-top:hover {
+            transform: translateY(-5px) scale(1.05);
+        }
+
+        /* ==================== RESPONSIVE ==================== */
+        @media (max-width: 992px) {
+            .hero-content {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            .hero-text .tagline {
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .hero-stats {
+                justify-content: center;
+            }
+
+            .hero-buttons {
+                justify-content: center;
+            }
+
+            .hero-image {
+                order: -1;
+            }
+
+            .hero-avatar-wrapper {
+                width: 280px;
+                height: 280px;
+            }
+
+            .hero-avatar {
+                font-size: 6rem;
+            }
+
+            .about-grid {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+
+            .contact-grid {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+
+            .floating-badge.badge-1 { right: 0; }
+            .floating-badge.badge-2 { left: 0; }
+        }
+
+        @media (max-width: 768px) {
+            .section {
+                padding: 70px 0;
+            }
+
+            .nav-links {
+                position: fixed;
+                top: 70px;
+                left: 0;
+                right: 0;
+                background: var(--white);
+                flex-direction: column;
+                padding: 20px;
+                box-shadow: var(--shadow-lg);
+                transform: translateY(-150%);
+                transition: transform 0.4s ease;
+                gap: 4px;
+                z-index: 999;
+            }
+
+            .nav-links.open {
+                transform: translateY(0);
+            }
+
+            .nav-links a {
+                width: 100%;
+                text-align: center;
+                padding: 12px;
+            }
+
+            .mobile-toggle {
+                display: block;
+            }
+
+            .hero-stats {
+                gap: 20px;
+            }
+
+            .stat-number {
+                font-size: 1.5rem;
+            }
+
+            .about-highlights {
+                grid-template-columns: 1fr;
+            }
+
+            .timeline::before {
+                left: 15px;
+            }
+
+            .timeline-item {
+                padding-left: 55px;
+            }
+
+            .timeline-dot {
+                left: 3px;
+                width: 24px;
+                height: 24px;
+            }
+
+            .form-row {
+                grid-template-columns: 1fr;
+            }
+
+            .contact-form {
+                padding: 24px;
+            }
+
+            .floating-badge {
+                padding: 10px 14px;
+            }
+
+            .badge-icon {
+                width: 34px;
+                height: 34px;
+                font-size: 0.95rem;
+            }
+
+            .badge-text strong {
+                font-size: 0.8rem;
+            }
+
+            .badge-text span {
+                font-size: 0.7rem;
+            }
+
+            .back-to-top {
+                bottom: 20px;
+                right: 20px;
+                width: 44px;
+                height: 44px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 0 16px;
+            }
+
+            .hero-avatar-wrapper {
+                width: 220px;
+                height: 220px;
+            }
+
+            .hero-avatar {
+                font-size: 5rem;
+            }
+
+            .floating-badge.badge-2 {
+                display: none;
+            }
+
+            .hero-buttons {
+                flex-direction: column;
+                width: 100%;
+            }
+
+            .hero-buttons .btn {
+                width: 100%;
+                justify-content: center;
+            }
+        }
+
+        /* ==================== LOADING ANIMATION ==================== */
+        .loader {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: var(--white);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 9999;
+            transition: opacity 0.5s ease, visibility 0.5s ease;
+        }
+
+        .loader.hidden {
+            opacity: 0;
+            visibility: hidden;
+        }
+
+        .loader-spinner {
+            width: 50px;
+            height: 50px;
+            border: 4px solid var(--primary-light);
+            border-top-color: var(--primary);
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Loader -->
+    <div class="loader" id="loader">
+        <div class="loader-spinner"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="https://sites.google.com/view/neonatalcareet/home" class="nav-logo">
+                <div class="logo-icon">YS</div>
+                <span>Yaregal Semanew</span>
+            </a>
+
+            <div class="nav-links" id="navLinks">
+                <a href="https://sites.google.com/view/neonatalcareet/home" class="active">Home</a>
+                <a href="https://sites.google.com/view/neonatalcareet/contact-me">About</a>
+                <a href="https://sites.google.com/view/neonatalcareet">Experience</a>
+                <a href="#skills">Skills</a>
+                <a href="https://www.researchgate.net/profile/Yaregal-Semanew">Research</a>
+                <a href="https://gityar.github.io/LMS/">Projects</a>
+                <a href="https://sites.google.com/view/neonatalcareet/contact-me" class="nav-cta">
+                    <i class="fas fa-paper-plane"></i> Contact
+                </a>
+            </div>
+
+            <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <div class="greeting">
+                        <span class="dot"></span>
+                        Available for collaboration
+                    </div>
+                    <h1>
+                        Hi, I'm <span class="highlight">Yaregal Semanew</span>
+                    </h1>
+                    <p class="tagline">
+                        Neonatal Nursing Lecturer at Wollo University, passionate about advancing newborn care through research, evidence-based teaching, and innovative educational technology.
+                    </p>
+
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <div class="stat-number" data-count="6">0</div>
+                            <div class="stat-label">Years Teaching</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number" data-count="3">0</div>
+                            <div class="stat-label">NICUs Served</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number" data-count="10">0</div>
+                            <div class="stat-label">+ Publications</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number" data-count="500">0</div>
+                            <div class="stat-label">+ Students</div>
+                        </div>
+                    </div>
+
+                    <div class="hero-buttons">
+                        <a href="https://sites.google.com/view/neonatalcareet/contact-me" class="btn btn-primary">
+                            <i class="fas fa-handshake"></i> Let's Connect
+                        </a>
+                        <a href="https://www.researchgate.net/profile/Yaregal-Semanew" class="btn btn-secondary">
+                            <i class="fas fa-book-open"></i> View Research
+                        </a>
+                    </div>
+                </div>
+
+                <div class="hero-image">
+                    <div class="hero-avatar-wrapper">
+                        <div class="hero-avatar">YS</div>
+
+                        <div class="floating-badge badge-1">
+                            <div class="badge-icon blue">
+                                <i class="fas fa-baby"></i>
+                            </div>
+                            <div class="badge-text">
+                                <strong>Neonatal Nursing</strong>
+                                <span>Specialist</span>
+                            </div>
+                        </div>
+
+                        <div class="floating-badge badge-2">
+                            <div class="badge-icon purple">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+                            <div class="badge-text">
+                                <strong>Wollo University</strong>
+                                <span>Lecturer</span>
+                            </div>
+                        </div>
+
+                        <div class="floating-badge badge-3">
+                            <div class="badge-icon orange">
+                                <i class="fas fa-laptop-code"></i>
+                            </div>
+                            <div class="badge-text">
+                                <strong>LMS Developer</strong>
+                                <span>Digital Technology</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about" id="about">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-label">About Me</span>
+                <h2 class="section-title">Dedicated to Newborn Health</h2>
+                <p class="section-subtitle">
+                    Bridging clinical expertise and academic excellence to improve neonatal outcomes
+                </p>
+            </div>
+
+            <div class="about-grid">
+                <div class="about-image reveal">
+                    <div class="about-image-card">
+                        <div class="icon-large">👶</div>
+                        <h3>Every Newborn Matters</h3>
+                        <p>
+                            With a strong foundation in clinical NICU practice and academic teaching, 
+                            I am committed to equipping the next generation of nurses with the 
+                            knowledge and skills to save newborn lives.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="about-content reveal">
+                    <h2>Hello! I'm Yaregal Semanew</h2>
+                    <p class="lead">
+                        A passionate Neonatal Nursing educator, researcher, and innovator based in 
+                        the Amhara region of Ethiopia.
+                    </p>
+                    <p>
+                        For the past <strong>six years</strong>, I have been serving as a lecturer at 
+                        <strong>Wollo University</strong>, where I teach neonatal nursing courses and 
+                        mentor the next generation of healthcare professionals. Before joining academia, 
+                        I worked in <strong>Neonatal Intensive Care Units (NICUs)</strong> at hospitals 
+                        across the Amhara region, gaining hands-on experience in caring for the most 
+                        vulnerable patients.
+                    </p>
+                    <p>
+                        My research focuses on improving neonatal outcomes, and I have published my 
+                        work in reputable journals. I am also deeply interested in leveraging 
+                        <strong>modern technology</strong> to enhance teaching and learning — currently 
+                        developing a custom <strong>Learning Management System (LMS)</strong> to help 
+                        students learn remotely and access quality education anytime, anywhere.
+                    </p>
+
+                    <div class="about-highlights">
+                        <div class="highlight-item">
+                            <i class="fas fa-university"></i>
+                            <span>Wollo University</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-hospital"></i>
+                            <span>NICU Experience</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-flask"></i>
+                            <span>Published Researcher</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-code"></i>
+                            <span>Digital Technology Innovator</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="section experience" id="experience">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-label">Career Journey</span>
+                <h2 class="section-title">Professional Experience</h2>
+                <p class="section-subtitle">
+                    A blend of clinical practice, academic teaching, and research
+                </p>
+            </div>
+
+            <div class="timeline">
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="timeline-card">
+                        <div class="timeline-header">
+                            <div>
+                                <h3>Lecturer in Neonatal Nursing</h3>
+                                <div class="company">Wollo University, Ethiopia</div>
+                            </div>
+                            <span class="timeline-date">
+                                <i class="far fa-calendar"></i> 2019 – Present
+                            </span>
+                        </div>
+                        <p>
+                            Teaching undergraduate and postgraduate nursing students in neonatal 
+                            nursing, research methodology, and evidence-based practice. Responsible 
+                            for curriculum development, clinical supervision, and academic mentorship.
+                            Actively integrating technology into teaching through the development of 
+                            a custom Learning Management System.
+                        </p>
+                        <div class="timeline-tags">
+                            <span class="tag">Neonatal Nursing</span>
+                            <span class="tag">Curriculum Development</span>
+                            <span class="tag">Research Supervision</span>
+                            <span class="tag">Digital Technology</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot">
+                        <i class="fas fa-hospital"></i>
+                    </div>
+                    <div class="timeline-card">
+                        <div class="timeline-header">
+                            <div>
+                                <h3>NICU Nurse</h3>
+                                <div class="company">Hospitals in Amhara Region, Ethiopia</div>
+                            </div>
+                            <span class="timeline-date">
+                                <i class="far fa-calendar"></i> Before 2019
+                            </span>
+                        </div>
+                        <p>
+                            Provided specialized nursing care to critically ill and premature 
+                            newborns in Neonatal Intensive Care Units. Gained extensive hands-on 
+                            experience in neonatal resuscitation, ventilator management, KMC, 
+                            infection prevention, and family-centered care. This clinical foundation 
+                            continues to inform my teaching and research.
+                        </p>
+                        <div class="timeline-tags">
+                            <span class="tag">Neonatal Resuscitation</span>
+                            <span class="tag">Ventilator Management</span>
+                            <span class="tag">KMC</span>
+                            <span class="tag">Infection Prevention</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot">
+                        <i class="fas fa-flask"></i>
+                    </div>
+                    <div class="timeline-card">
+                        <div class="timeline-header">
+                            <div>
+                                <h3>Researcher & Author</h3>
+                                <div class="company">Peer-Reviewed Journals</div>
+                            </div>
+                            <span class="timeline-date">
+                                <i class="far fa-calendar"></i> Ongoing
+                            </span>
+                        </div>
+                        <p>
+                            Conducting and publishing research on neonatal health outcomes, 
+                            evidence-based nursing interventions, and healthcare quality improvement. 
+                            Committed to translating research findings into practical improvements 
+                            in NICU care and nursing education.
+                        </p>
+                        <div class="timeline-tags">
+                            <span class="tag">Neonatal Health</span>
+                            <span class="tag">Evidence-Based Practice</span>
+                            <span class="tag">Quality Improvement</span>
+                            <span class="tag">Publications</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item reveal">
+                    <div class="timeline-dot">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <div class="timeline-card">
+                        <div class="timeline-header">
+                            <div>
+                                <h3>LMS Developer</h3>
+                                <div class="company">Personal Digital Technology Project</div>
+                            </div>
+                            <span class="timeline-date">
+                                <i class="far fa-calendar"></i> 2024 – Present
+                            </span>
+                        </div>
+                        <p>
+                            Developing a custom Learning Management System tailored to the needs 
+                            of nursing students in Ethiopia. The platform aims to make quality 
+                            education accessible remotely, with features for course delivery, 
+                            assessments, and interactive learning — addressing the unique 
+                            challenges of resource-limited settings.
+                        </p>
+                        <div class="timeline-tags">
+                            <span class="tag">Web Development</span>
+                            <span class="tag">LMS Design</span>
+                            <span class="tag">Remote Learning</span>
+                            <span class="tag">Nursing Education</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section skills" id="skills">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-label">Expertise</span>
+                <h2 class="section-title">Skills & Competencies</h2>
+                <p class="section-subtitle">
+                    A unique combination of clinical, academic, and technical skills
+                </p>
+            </div>
+
+            <div class="skills-grid">
+                <div class="skill-card reveal">
+                    <div class="skill-icon">
+                        <i class="fas fa-baby"></i>
+                    </div>
+                    <h3>Clinical Neonatal Nursing</h3>
+                    <div class="skill-list">
+                        <div class="skill-item"><i class="fas fa-check"></i> Neonatal Resuscitation</div>
+                        <div class="skill-item"><i class="fas fa-check"></i> NICU Patient Care</div>
+                        <div class="skill-item"><i class="fas fa-check"></i> Kangaroo Mother Care</div>
+                        <div class="skill-item"><i class="fas fa-check"></i> Infection Prevention</div>
+                        <div class="skill-item"><i class="fas fa-check"></i> Ventilator Management</div>
+                    </div>
+                </div>
+
+                <div class="skill-card reveal">
+                    <div class="skill-icon">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                    </div>
+                    <h3>Teaching & Academia</h3>
+                    <div class="skill-list">
+                        <div class="skill-item"><i class="fas fa-check"></i> Curriculum Development</div>
+                        <div class="skill-item"><i class="fas fa-check"></i> Clinical Supervision</div>
+                        <div class="skill-item"><i class="fas fa-check"></i> Student Mentorship</div>
+                        <div class="skill-item"><i class="fas fa-check"></i> Assessment Design</div>
+                        <div class="skill-item"><i class="fas fa-check"></i> Blended Learning</div>
+                    </div>
+                </div>
+
+                <div class="skill-card reveal">
+                    <div class="skill-icon">
+                        <i class="fas fa-flask"></i>
+                    </div>
+                    <h3>Research & Publication</h3>
+                    <div class="skill-list">
+                        <div class="skill-item"><i class="fas fa-check"></i> Quantitative Research</div>
+                        <div class="skill-item"><i class="fas fa-check"></i> Qualitative Research</div>
+                        <div class="skill-item"><i class="fas fa-check"></i> Data Analysis (SPSS)</div>
+                        <div class="skill-item"><i class="fas fa-check"></i> Academic Writing</div>
+                        <div class="skill-item"><i class="fas fa-check"></i> Journal Publication</div>
+                    </div>
+                </div>
+
+                <div class="skill-card reveal">
+                    <div class="skill-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3>Digital Technology & Development</h3>
+                    <div class="skill-list">
+                        <div class="skill-item"><i class="fas fa-check"></i> LMS Development</div>
+                        <div class="skill-item"><i class="fas fa-check"></i> HTML/CSS/JavaScript</div>
+                        <div class="skill-item"><i class="fas fa-check"></i> UI/UX Design</div>
+                        <div class="skill-item"><i class="fas fa-check"></i> Digital Content Creation</div>
+                        <div class="skill-item"><i class="fas fa-check"></i> Online Course Design</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Research Section -->
+    <section class="section research" id="research">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-label">Research</span>
+                <h2 class="section-title">Publications</h2>
+                <p class="section-subtitle">
+                    Contributing to the body of knowledge in neonatal nursing and healthcare
+                </p>
+            </div>
+            
+    <!-- Projects Section -->
+    <section class="section projects" id="projects">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-label">Projects</span>
+                <h2 class="section-title">Innovations & Initiatives</h2>
+                <p class="section-subtitle">
+                    Combining healthcare expertise with technology to create meaningful impact
+                </p>
+            </div>
+
+            <div class="projects-grid">
+                <div class="project-card reveal">
+                    <div class="project-banner">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-status dev">
+                            <i class="fas fa-code"></i> In Development
+                        </span>
+                        <h3>Nursing Learning Management System</h3>
+                        <p>
+                            A custom LMS designed specifically for nursing students in Ethiopia, 
+                            enabling remote access to course materials, interactive assessments, 
+                            video lectures, and collaborative learning tools. Built to address 
+                            the unique challenges of resource-limited educational settings.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML/CSS/JS</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">MongoDB</span>
+                            <span class="tech-tag">UI/UX</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://gityar.github.io/LMS/"><i class="fas fa-external-link-alt"></i> Neo LMS </a>
+                            <a href="https://gityar.github.io/LMS/"><i class="fab fa-github"></i> GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card reveal">
+                    <div class="project-banner">
+                        <i class="fas fa-baby"></i>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-status active">
+                            <i class="fas fa-check-circle"></i> Active
+                        </span>
+                        <h3>NICU Training Manual — Interactive Edition</h3>
+                        <p>
+                            An interactive, web-based version of the Ethiopian MOH NICU Training 
+                            Manual, featuring quizzes, reflection exercises, and multimedia content. 
+                            This project transforms traditional training materials into engaging 
+                            digital learning experiences.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Interactive Learning</span>
+                            <span class="tech-tag">Quizzes</span>
+                            <span class="tech-tag">Responsive Design</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#"><i class="fas fa-external-link-alt"></i> View</a>
+                            <a href="#"><i class="fab fa-github"></i> GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card reveal">
+                    <div class="project-banner">
+                        <i class="fas fa-heartbeat"></i>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-status active">
+                            <i class="fas fa-check-circle"></i> Active
+                        </span>
+                        <h3>Neonatal Resuscitation Simulation Program</h3>
+                        <p>
+                            A structured simulation-based training program for nursing students 
+                            and practicing nurses, focusing on neonatal resuscitation skills. 
+                            Includes scenario-based learning, skills checklists, and competency 
+                            assessments.
+                        </p>
+                                                <div class="project-links">
+                            <a href="https://gityar.github.io/LMS/"><i class="fas fa-external-link-alt"></i> Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact" id="contact">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-label">Get In Touch</span>
+                <h2 class="section-title">Let's Collaborate</h2>
+                <p class="section-subtitle">
+                    Open to research collaborations, speaking engagements, and Digital health and Learning partnerships
+                </p>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-info reveal">
+                    <h3>Contact Information</h3>
+                    <p>
+                        Feel free to reach out for research collaborations, guest lectures, 
+                        or to discuss innovative approaches to neonatal nursing education.
+                    </p>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-detail">
+                            <span>Email</span>
+                            <a href="mailto:yaregal.semanew@wu.edu.et">yaregal.semanew@wu.edu.et</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-university"></i>
+                        </div>
+                        <div class="contact-detail">
+                            <span>Institution</span>
+                            <a href="wu.edu.et">Wollo University, Dessie, Ethiopia</a>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-detail">
+                            <span>Location</span>
+                            <a href="wu.edu.et">Amhara Region, Ethiopia</a>
+                        </div>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/yaregals" class="social-link" title="LinkedIn" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://scholar.google.com/citations?user=6mqRrjgAAAAJ&hl=en" class="social-link" title="Google Scholar" aria-label="Google Scholar">
+                            <i class="fas fa-graduation-cap"></i>
+                        </a>
+                        <a href="https://www.researchgate.net/profile/Yaregal-Semanew" class="social-link" title="ResearchGate" aria-label="ResearchGate">
+                            <i class="fab fa-researchgate"></i>
+                        </a>
+                        <a href="https://gityar.github.io/LMS/" class="social-link" title="GitHub" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://x.com/wogeltena" class="social-link" title="Twitter" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="contact-form reveal">
+                    <form id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Your Name</label>
+                                <input type="text" id="name" name="name" placeholder="John Doe" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Your Email</label>
+                                <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" placeholder="Research Collaboration" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" placeholder="Tell me about your project or inquiry..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i> Send Message
+                        </button>
+                        <div class="form-message" id="formMessage"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <div class="logo-icon">YS</div>
+                    <span>Yaregal Semanew</span>
+                </div>
+                <p>
+                    &copy; <span id="year"></span> Yaregal Semanew. All rights reserved.
+                </p>
+                <p>
+                    Made with <i class="fas fa-heart heart"></i> for newborn health and nursing education
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script>
+        // ==================== LOADER ====================
+        window.addEventListener('load', () => {
+            setTimeout(() => {
+                document.getElementById('loader').classList.add('hidden');
+            }, 500);
+        });
+
+        // ==================== YEAR ====================
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        // ==================== NAVBAR ====================
+        const navbar = document.getElementById('navbar');
+        const backToTop = document.getElementById('backToTop');
+        const sections = document.querySelectorAll('section[id]');
+        const navLinks = document.querySelectorAll('.nav-links a');
+
+        window.addEventListener('scroll', () => {
+            const scrollY = window.scrollY;
+
+            // Navbar background
+            if (scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+
+            // Back to top
+            if (scrollY > 500) {
+                backToTop.classList.add('visible');
+            } else {
+                backToTop.classList.remove('visible');
+            }
+
+            // Active nav link
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop - 100;
+                if (scrollY >= sectionTop) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.classList.add('active');
+                }
+            });
+        });
+
+        // ==================== MOBILE MENU ====================
+        const mobileToggle = document.getElementById('mobileToggle');
+        const navLinksContainer = document.getElementById('navLinks');
+
+        mobileToggle.addEventListener('click', () => {
+            navLinksContainer.classList.toggle('open');
+            const icon = mobileToggle.querySelector('i');
+            if (navLinksContainer.classList.contains('open')) {
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-times');
+            } else {
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            }
+        });
+
+        // Close mobile menu on link click
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                navLinksContainer.classList.remove('open');
+                const icon = mobileToggle.querySelector('i');
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            });
+        });
+
+        // ==================== BACK TO TOP ====================
+        backToTop.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        // ==================== SCROLL REVEAL ====================
+        const revealElements = document.querySelectorAll('.reveal');
+        const revealObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                }
+            });
+        }, {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        });
+
+        revealElements.forEach(el => revealObserver.observe(el));
+
+        // ==================== COUNTER ANIMATION ====================
+        const counters = document.querySelectorAll('.stat-number');
+        const counterObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const target = +entry.target.dataset.count;
+                    const duration = 2000;
+                    const step = target / (duration / 16);
+                    let current = 0;
+
+                    const updateCounter = () => {
+                        current += step;
+                        if (current < target) {
+                            entry.target.textContent = Math.floor(current) + '+';
+                            requestAnimationFrame(updateCounter);
+                        } else {
+                            entry.target.textContent = target + '+';
+                        }
+                    };
+
+                    updateCounter();
+                    counterObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.5 });
+
+        counters.forEach(counter => counterObserver.observe(counter));
+
+        // ==================== CONTACT FORM ====================
+        const contactForm = document.getElementById('contactForm');
+        const formMessage = document.getElementById('formMessage');
+
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+
+            const submitBtn = contactForm.querySelector('button[type="submit"]');
+            const originalText = submitBtn.innerHTML;
+
+            // Show loading state
+            submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
+            submitBtn.disabled = true;
+
+            // Simulate form submission (replace with actual endpoint)
+            setTimeout(() => {
+                submitBtn.innerHTML = originalText;
+                submitBtn.disabled = false;
+                formMessage.className = 'form-message success';
+                formMessage.textContent = '✓ Thank you! Your message has been sent successfully. I will get back to you soon.';
+                contactForm.reset();
+
+                // Hide message after 5 seconds
+                setTimeout(() => {
+                    formMessage.className = 'form-message';
+                }, 5000);
+            }, 1500);
+        });
+
+        // ==================== SMOOTH SCROLL ====================
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                const href = this.getAttribute('href');
+                if (href === '#') return;
+                
+                e.preventDefault();
+                const target = document.querySelector(href);
+                if (target) {
+                    const offsetTop = target.offsetTop - 70;
+                    window.scrollTo({
+                        top: offsetTop,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // ==================== TYPING EFFECT (Optional Hero Enhancement) ====================
+        // Uncomment if you want a typing effect on the hero title
+        /*
+        const heroTitle = document.querySelector('.hero-text h1 .highlight');
+        const text = heroTitle.textContent;
+        heroTitle.textContent = '';
+        let i = 0;
+        function typeWriter() {
+            if (i < text.length) {
+                heroTitle.textContent += text.charAt(i);
+                i++;
+                setTimeout(typeWriter, 100);
+            }
+        }
+        setTimeout(typeWriter, 1000);
+        */
+
+        // ==================== CONSOLE MESSAGE ====================
+        console.log('%c👋 Welcome to Yaregal Semanew\'s Portfolio!', 
+            'font-size: 20px; font-weight: bold; color: #0ea5e9; padding: 10px;');
+        console.log('%cNeonatal Nursing Educator | Researcher | Dital Technology Innovator', 
+            'font-size: 14px; color: #64748b; padding: 5px;');
+        console.log('%cInterested in collaboration? Reach out via the contact form!', 
+            'font-size: 12px; color: #14b8a6; padding: 5px;');
+    </script>
+
+</body>
+</html>
